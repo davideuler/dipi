@@ -1,0 +1,18 @@
+#mail
+IMAP_SERVER = '{YOUR_EMAIL_IMAP_SERVER_ADDRESS}' 	#eg. imap.google.com
+IMAP_PORT = '{YOUR_EMAIL_IMAP_SERVER_PORT}' 		#eg. 993
+EMAIL_USER = '{YOUR_EMAIL_ADDRESS}' 				#eg. xxx@dianping.com
+EMAIL_PASS = '{YOUR_EMAIL_PASSWORD}'				
+
+#mysql
+DB_HOST = 'localhost'
+DB_USER = 'root'
+DB_PASS = ''
+DB_NAME = 'chase'
+DB_CHARSET = 'utf8'
+
+#exe3000
+3000_PWD = ''
+3000_URL = ''
+3000_ENTERPRISE_ID = ''
+3000_ACCOUNT_ID = ''
