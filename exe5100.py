@@ -6,7 +6,7 @@ class exe5100(executor):
 		return 'add girl'
 	
 	def help(self):
-		return 'usage => to:help@dianping.com subject:add girl?[girl name] attachement:[girl.png]'
+		return 'usage => to:q@dianping.com subject:add girl?[girl name] attachement:[girl.png]'
 	
 	def biz(self, m):
 		return self.add_girl(m)

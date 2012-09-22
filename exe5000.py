@@ -10,7 +10,7 @@ class exe5000(executor):
 		return 'show me the girl'
 	
 	def help(self):
-		return 'usage => to:help@dianping.com subject:show me the girl?[girl name]'
+		return 'usage => to:q@dianping.com subject:show me the girl?[girl name]'
 	
 	def biz(self, m):
 		return self.get_girl(m.para)

@@ -1,6 +1,7 @@
 from executor import executor
 import db
 import urllib,urllib2
+import config
 
 class exe3000(executor):
 
@@ -11,7 +12,7 @@ class exe3000(executor):
 		self.mobi_dic = db.query_dic(sql)
 
 	def help(self):
-		return 'usage => to:[email_users] cc:help@dianping.com subject:sms?[sms content]'
+		return 'usage => to:[email_users] cc:q@dianping.com subject:sms?[sms content]'
 
 	
 	def cmd_name(self):
@@ -31,9 +32,9 @@ class exe3000(executor):
 		return mobi_to
 
 	def send_sms(self, body, mobi):
-		para = {'enterpriseid': config.3000_ENTERPRISE_ID,'accountid': config.3000_ACCOUNT_ID,'pswd':config.3000_PWD, 'mobs' : mobi, 'msg' : body.encode('gbk')}
+		para = {'enterpriseid': config.EXE3000_ENTERPRISE_ID,'accountid': config.EXE3000_ACCOUNT_ID,'pswd':config.EXE3000_PWD, 'mobs' : mobi, 'msg' : body.encode('gbk')}
 		s = urllib.urlencode(para)
-		url = config.3000_URL + s	
+		url = config.EXE3000_URL + s	
 		n = urllib2.urlopen(url)
 
 

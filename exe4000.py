@@ -9,7 +9,7 @@ class exe4000(executor):
 		return 'show me the movie'
 	
 	def	help(self):
-		return 'usage => to:help@dianping.com subject:show me the movie?[movie name]'
+		return 'usage => to:q@dianping.com subject:show me the movie?[movie name]'
 		
 	
 	def biz(self, m):
@@ -23,7 +23,7 @@ class exe4000(executor):
 		res = json.loads(n)
 		
 		if len(res['records']) == 0:
-			return 'movie not found.'
+			return {'body':'movie not found.'}
 		else:
 			txt = ''
 			for i in res['records']:
